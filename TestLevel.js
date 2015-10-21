@@ -1,4 +1,4 @@
-(var level1 = { "height":12,
+var level1 = { "height":12,
  "layers":[
         {
          "compression":"zlib",

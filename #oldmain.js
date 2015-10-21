@@ -57,6 +57,10 @@ var TILESET_COUNT_Y = 31; // How many rows of tile images are in the tileset
 //var ENEMY_ACCEL = ENEMY_MAXDX * ;
 //TODO
 
+//screen with hight
+var SCREEN_HEIGHT = canvas.height
+var SCREEN_WIDTH = canvas.width
+
 //Layers Names and what Layer the are on 0 is the bottom layer going up.
 var LAYER_BACKGOUND = 0; 
 var LAYER_PLATFORMS = 1;
@@ -87,7 +91,7 @@ function cellAtTileCoord(layer, tx, ty)
 	// let the player drop of the bottom of the screen (this means death)
 	if(ty>=MAP.th)
 		return 0;
-	return cells[layer][ty][tx];
+	return cells[layer][ty],[tx];
 };
 
 function tileToPixel(tile)
@@ -188,9 +192,7 @@ function initialize() {
 						 // (because our collision squares are 35x35 but the tile in the
 						 // level are 70x70)
 					cells[layerIdx][y][x] = 1;
-					cells[layerIdx][y-1][x] = 1;
-					cells[layerIdx][y-1][x+1] = 1;
-					cells[layerIdx][y][x+1] = 1;
+					
 				 }
 				 else if(cells[layerIdx][y][x] != 1) {
 								// if we haven't set this cell's value, then set it to 0 now
@@ -220,18 +222,18 @@ function initialize() {
 		}
 	} );
 	// add enemies
-	idx = 0;
-	for(var y = 0; y < level1.layers[LAYER_OBJECT_ENEMIES].height; y++) {
-		for(var x = 0; x < level1.layers[LAYER_OBJECT_ENEMIES].width; x++) {
-			if(level1.layers[LAYER_OBJECT_ENEMIES].data[idx] != 0) {
-					var px = tileToPixel(x);
-					var py = tileToPixel(y);
-	 				var e = new Enemy(px, py);
-					enemies.push(e);
-			}
-			idx++;
-		}
-	}
+	// idx = 0;
+	// for(var y = 0; y < level1.layers[LAYER_OBJECT_ENEMIES].height; y++) {
+		// for(var x = 0; x < level1.layers[LAYER_OBJECT_ENEMIES].width; x++) {
+			// if(level1.layers[LAYER_OBJECT_ENEMIES].data[idx] != 0) {
+					// var px = tileToPixel(x);
+					// var py = tileToPixel(y);
+	 				// var e = new Enemy(px, py);
+					// enemies.push(e);
+			// }
+			// idx++;
+		// }
+	// }
 	// initialize trigger layer in collision map
 	cells[LAYER_OBJECT_TRIGGERS] = [];
 	idx = 0;
@@ -240,9 +242,6 @@ function initialize() {
 			for(var x = 0; x < level1.layers[LAYER_OBJECT_TRIGGERS].width; x++) {
 				if(level1.layers[LAYER_OBJECT_TRIGGERS].data[idx] != 0) {
 						cells[LAYER_OBJECT_TRIGGERS][y][x] = 1;
-						cells[LAYER_OBJECT_TRIGGERS][y-1][x] = 1;
-						cells[LAYER_OBJECT_TRIGGERS][y-1][x+1] = 1;
-						cells[LAYER_OBJECT_TRIGGERS][y][x+1] = 1;
 			}
 			else if(cells[LAYER_OBJECT_TRIGGERS][y][x] != 1) {
 					// if we haven't set this cell's value, then set it to 0 now
