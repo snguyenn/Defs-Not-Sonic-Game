@@ -15,7 +15,7 @@
  </layer>
  <layer name="Damage Walls" width="15" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo4BywA/EAmTqlQViOSq5AwAkFABb
+   eJxjYBgFo4AywA/EAmTqlQViOSC2opJbADXMAJU=
   </data>
  </layer>
  <layer name="Enemies" width="15" height="12">
