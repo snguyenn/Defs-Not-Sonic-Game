@@ -39,8 +39,11 @@ var fpsTime= 0;
 
 var keyboard = new Keyboard();
 var player = new Player();
-var bullets = []
+var bullets = [];
 var enemies = [];
+
+var SCREEN_HEIGHT = canvas.height
+var SCREEN_WIDTH = canvas.width
 
 var LAYER_COUNT = ; //Number of Layers in the map. Were using a background layer, a platform layer and a ladder layer.
 var MAP = {tw:, th:}; //Specifies how big the level is, in tiles. This is 60 tiles Wide and 15 tiles High
