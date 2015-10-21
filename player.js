@@ -20,10 +20,10 @@ var Player = function() {
 	}
 	
 	this.position = new Vector2();
-	this.position.set (*TILE, *TILE); //To be added
+	this.position.set (9*TILE, 0*TILE); //To be added
 	
-	this.width = ; //To be added
-	this.height = ; //To be added
+	this.width = 0; //To be added
+	this.height = 0; //To be added
 	
 	this.veloctiy = new Vector2();
 	

@@ -1,37 +1,37 @@
 var EnemyBasic = function() {
 	this.image= document.createElement("img");
-	this.x= //random generated
-	this.y= //random
-	this.width= //tba
-	this.height= //tba
-	this.image.src= //tba
+	this.x= 0//random generated
+	this.y= 0//random
+	this.width= 0//tba
+	this.height= 0//tba
+	this.image.src= 0//tba
 };
 
 var EnemyFlying = function() {
 	this.image= document.createElement("img");
-	this.x= //random generated
-	this.y= //random
-	this.width= //tba
-	this.height= //tba
-	this.image.src= //tba
+	this.x= 0//random generated
+	this.y= 0//random
+	this.width= 0//tba
+	this.height= 0//tba
+	this.image.src= 0//tba
 };
 
 var EnemyLazer = function() {
 	this.image= document.createElement("img");
-	this.x= //random generated
-	this.y= //random
-	this.width= //tba
-	this.height= //tba
-	this.image.src= //tba
+	this.x= 0//random generated
+	this.y= 0//random
+	this.width= 0//tba
+	this.height= 0//tba
+	this.image.src= 0//tba
 };
 
 var EnemyBomber = function() {
 	this.image= document.createElement("img");
-	this.x= //random generated
-	this.y= //random
-	this.width= //tba
-	this.height= //tba
-	this.image.src= //tba
+	this.x= 0//random generated
+	this.y= 0//random
+	this.width= 0//tba
+	this.height= 0//tba
+	this.image.src= 0//tba
 };
 
 

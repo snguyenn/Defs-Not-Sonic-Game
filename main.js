@@ -42,26 +42,27 @@ var player = new Player();
 var bullets = []
 var enemies = [];
 
-var LAYER_COUNT = ; //Number of Layers in the map. Were using a background layer, a platform layer and a ladder layer.
-var MAP = {tw:, th:}; //Specifies how big the level is, in tiles. This is 60 tiles Wide and 15 tiles High
-var TILE = ; //The width and height of the tile in pixels. The tile should be a square. This is the map gird tiles. The images can be different dimensions.
-var TILESET_TILE = TILE * ; //The width and height of a tile in the tileset.
-var TILESET_PADDING = ; //How many pixels are between the image border and the tile images in the tilemap.
-var TILESET_SPACING = ; //How many pixels are between the images in the tilemap
-var TILESET_COUNT_X = ; //How many columns of tile images are in the tileset
-var TILESET_COUNT_Y = ; // How many rows of tile images are in the tileset
+var LAYER_COUNT = 5; //Number of Layers in the map. Were using a background layer, a platform layer and a ladder layer.
+var MAP = {tw:15, th:12}; //Specifies how big the level is, in tiles. This is 60 tiles Wide and 15 tiles High
+var TILE = 32; //The width and height of the tile in pixels. The tile should be a square. This is the map gird tiles. The images can be different dimensions.
+var TILESET_TILE = TILE * 2; //The width and height of a tile in the tileset.
+var TILESET_PADDING = 2; //How many pixels are between the image border and the tile images in the tilemap.
+var TILESET_SPACING = 2; //How many pixels are between the images in the tilemap
+var TILESET_COUNT_X = 14; //How many columns of tile images are in the tileset
+var TILESET_COUNT_Y = 31; // How many rows of tile images are in the tileset
 //TODO
 
 //Enemy Variables
-var ENEMY_MAXDX = METER * ;
-var ENEMY_ACCEL = ENEMY_MAXDX * ;
+//var ENEMY_MAXDX = METER * ;
+//var ENEMY_ACCEL = ENEMY_MAXDX * ;
 //TODO
 
-var LAYER_BACKGOUND = ;
-var LAYER_PLATFORMS = ;
-var LAYER_LADDERS = ;
-var LAYER_OBJECT_ENEMIES = ;
-var LAYER_OBJECT_TRIGGERS = ;
+//Layers Names and what Layer the are on 0 is the bottom layer going up.
+var LAYER_BACKGOUND = 0; 
+var LAYER_PLATFORMS = 1;
+var LAYER_DAMAGE_WALL = 2;
+var LAYER_OBJECT_ENEMIES = 3;
+var LAYER_OBJECT_TRIGGERS = 4;
 //TODO
 
 // load the image to use for the level tiles
