@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="15" height="12" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="Tileset 1" tilewidth="32" tileheight="32" tilecount="420">
+  <image source="Tileset 1.png" trans="ffffff" width="448" height="960"/>
+ </tileset>
+ <layer name="Background" width="15" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2D4AAAC0AAB
+  </data>
+ </layer>
+ <layer name="Plaform" width="15" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYCQTjwIIYAZiFiBmHWiH4AFDwY0wQG56BGEASjwANw==
+  </data>
+ </layer>
+ <layer name="Damage Walls" width="15" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4AywA/EAmTqlQViOSC2opJbADXMAJU=
+  </data>
+ </layer>
+ <layer name="Enemies" width="15" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2D4AAAC0AAB
+  </data>
+ </layer>
+ <layer name="Trigers" width="15" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2D4AAAC0AAB
+  </data>
+ </layer>
+</map>
