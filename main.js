@@ -30,6 +30,18 @@ var overBg = document.createElement("img");
 overBg.src = "gmOver.jpg";
 var goBackground = [];
 
+	//make start button object
+var ButtonSt =  {
+	image: document.createElement("img"),
+	x: SCREEN_WIDTH/2,
+	y: SCREEN_HEIGHT/2 + 13,
+	width: = 52,
+	height: = 36,
+};
+
+	//start button image
+ButtonSt.image.src = "Btstrt.jpg";
+
 function getDeltaTime()
 {
 	endFrameMillis = startFrameMillis;
@@ -61,6 +73,12 @@ for(var y=0; y<15; y++)
 			context.drawImage(sBackground[y][x], x*0, y*0);
 		}
 	}
+		//draw start button
+	context.save();
+		context.translate(ButtonSt.x, ButtonSt.y);
+		context.drawImage(
+			ButtonSt.image, -ButtonSt.width/2, -ButtonSt.height/2);
+		context.restore();
 }
 
 	//says height and width of all backgrounds
